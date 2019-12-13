@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  	<head>
+    	<title>Stranded</title>
+			<link rel="stylesheet" href="index.css">
+			<meta charset= "UTF8">
+  	</head>
+
+<body>
+
+	<!-- Placement of title tabs -->
+	<div class="hidden title" id="player">
+		Alone
+	</div>
+	<div class="hidden title" id="nation_crab">
+		Crabs
+	</div>
+
+	<!-- Placement of current title tabs -->
+	<div class="hidden current_tab tab" id="main" onClick="changeTab('main')">Main
+	</div>
+	<div class="hidden notcurrent_tab tab" id="build" onClick="changeTab('build')">Build<span class="hidden signalNew" id="newBuild">!</span> 
+	</div>
+	<div class="hidden notcurrent_tab tab" id="invent" onClick="changeTab('invent')">Invent<span class="hidden signalNew" id="newInvention">!</span>
+	</div>
+	<div class="hidden notcurrent_tab tab" id="map" onClick="changeTab('map')">Map
+	</div>
+
+	<!-- Placement of left and right snippets -->
+	<div class="hidden snippet" id="resources">
+	</div>
+	<div class="hidden snippet" id="objects">
+		Objects
+	</div>
+	<div class="nothidden snippet" id="text">
+	</div>
+	<div class="snippet" id="log">
+		<div onClick="save()">Save</div>
+		<div onClick="reload()">Load</div>
+		<div onClick="clearSave()">Clear save</div>
+	</div>
+
+	<!-- Center content -->
+	<div class="hidden content" id="content_alone_main">
+	</div>
+
+	<div class="hidden content" id="content_alone_build">
+	</div>
+
+	<div class="hidden content" id="content_alone_invent">
+	</div>
+
+	<div class="hidden content" id="content_alone_map">
+	</div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
